@@ -26,7 +26,7 @@ app.post('/', async (req, res) => {
         console.log(`===========Command is to turn ${command} the light===========`)
         client.publish('ikbh99@gmail.com/ramukaka', command)
     }
-    let resText = `Going to turn ${command} the light`
+    let resText = `The Lights have been turned ${command}`
     res.json({
         "fulfillmentMessages": [
             {
